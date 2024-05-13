@@ -3,8 +3,8 @@ Ce projet concerne la création d'un site web professionnel pour un cabinet dent
  Ma responsabilité sera d'implémenter le design de la maquette en utilisant des technologies web modernes.
 
  Fonctionnalités
-Présentation du cabinet dentaire : Le site doit inclure des informations sur le cabinet, ses services, son équipe, et ses heures d'ouverture.
-Prise de rendez-vous en ligne : Les utilisateurs doivent avoir la possibilité de prendre rendez-vous en ligne avec le cabinet dentaire.
+Présentation du cabinet dentaire : Inclure des informations sur le cabinet, ses services, son équipe, et ses heures d'ouverture.
+Prise de rendez-vous en ligne : Les utilisateurs peuvent avoir la possibilité de prendre rendez-vous en ligne avec le cabinet dentaire.
 Contact : Une section contact permettra aux utilisateurs de poser des questions ou de demander des informations supplémentaires.
 Informations sur les traitements : Le site devrait fournir des détails sur les différents traitements dentaires offerts par le cabinet.
 
