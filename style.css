@@ -97,6 +97,7 @@ header{
 .button1 {
     display: flex;
     justify-content: space-between;
+   
 }
 
 
@@ -112,12 +113,14 @@ header{
     border-radius: 5px;
     border: none;
     padding: 15px 30px;
+    cursor: pointer;
 }
 .left .Learm {
     
     border-radius: 5px;
     border: none;
     padding: 15px 30px;
+    cursor: pointer;
 }
 .div-bleu{
     width: 100%;
@@ -169,8 +172,6 @@ header{
 }
 .FEATUR{
     display: flex;
-    /* justify-content: space-around; */
-    /* align-items: center; */
     font-size: 16px;
     width: 1100px;
     margin-left: 60px;
@@ -278,6 +279,7 @@ header{
     background-color: var(--whiteBG);
     border-radius: 10px;
     border:2px  var(--silver) solid;
+    padding-left: 29px;
 }
 .all-meet{
     height: 550px;
