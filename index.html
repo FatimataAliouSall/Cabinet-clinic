@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="an">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -186,7 +186,7 @@
    </div>
    <div class="our-history">
       <div class="our-history-left">
-         <img src="ressources/images/Close up smiley patient at appointment.png" alt="Close up smiley patient at appointment">
+         <img src="ressources/images/Closeupsmileypatientatappointment.png" alt="Closeupsmileypatientatappointment">
       </div>
       <div class="our-history-right" >
          <h1>Our history</h1>
@@ -277,15 +277,15 @@
          <form class="form">
             <div class="form-label">
                <label for="name">Name</label>
-               <input type="text" id="name">
+               <input type="text" id="name" name="name" placeholder="full name" required>
             </div>
             <div class="form-label">
                <label for="Phone">Phone</label>
-               <input type="tel" id="phone">
+               <input type="tel" id="phone" name="phone" placeholder="+222 20 36 41 74" required>
             </div>
             <div class="form-label">
                <label for="date">Date</label>
-               <input type="date" id="date">
+               <input type="date" id="date" name="date" placeholder="DD/MM/YYYY" required>
             </div>
             <div class="form-label">
                <label for="select">Doctor</label>
@@ -313,8 +313,8 @@
       <div class="newsletter">
          <div class="Subscribe">
             <h2>Subscribe to our newsletter</h2>
-            <input type="text" id="name" name="name" placeholder="First name">
-            <input type="Email" id="email" name="Email" placeholder="Email address">
+            <input type="text" id="name" name="name" placeholder="First name" required>
+            <input type="email" id="email" name="email" placeholder="Email address" required>
             <button class="-buttom-">Subscrbe Now</button>
 
 
@@ -327,7 +327,8 @@
             </div>
             <div class="visit">
               <p>we are welcoming you</p> 
-              <h3>Want to visit <br>our clinic?</h3>
+              <h3>Want to visit </h3>
+              <h3>our clinic?</h3>
               <p>Saturday-Thrusday <br>10am-9pm</p>
             </div>
             <div class="link">

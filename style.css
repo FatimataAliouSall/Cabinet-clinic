@@ -496,6 +496,7 @@ border-radius: 10px;
     flex-direction: column;
     width: 250px; 
     margin: 40px;
+    
 }
 .link-child{
     display: flex;
@@ -504,6 +505,7 @@ border-radius: 10px;
 .link-child .child-right{
     padding-right: 40px;
     line-height: 30px;
+    
     
 }
 .link-child .child-left{
