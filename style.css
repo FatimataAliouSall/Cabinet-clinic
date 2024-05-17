@@ -116,7 +116,7 @@ header{
     cursor: pointer;
 }
 .left .Learm {
-    
+    background-color: var(--whiteBG);
     border-radius: 5px;
     border: none;
     padding: 15px 30px;
