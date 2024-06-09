@@ -12,40 +12,43 @@
           <div class="logo">
              <img src="ressources/images/logo.png" alt="logo">
           </div>
-         
+          <div class="bar">
+            <input type="checkbox" class="toggle">
+            <div class="menu-bar"></div>
+          </div>
           <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#appointment">Appointment</a></li>
+            <li><a href="#">Sign Up</a></li>
          </ul>
          <div class="button">
-            <button>Appointment</button>
+            <button>Login</button>
          </div>
        </header>
    </section>       
    <section id="home">
       <div class="left">
-         <div>
+         <div class="top">
             <h1>We Provide High</h1>
             <h1>Quality <span>Dental</span> Services</h1>
             <h5>Appropriately embrace transparent materials via</h5>
             <h5>turnkey niche markets.</h5>
 
             <div class="button1">
-               <button class="Get"> Get Started</button>
-               <button class="Learm">Learm More</button> 
+               <button class="Get">Make An Appointment</button>
             </div>
         </div>
-         </div>
-         <div right>
-               <img src="ressources/images/illustrationss.png"  alt="images d'illustrationss">
+         <!-- </div> -->
+         <div class="right">
+               <img src="ressources/images/dental-pexels-photo-6627462.jpeg"  alt="images d'illustrationss">
          </div>
            
            
       </div> 
    </section> 
-      <div class="div-bleu">
+      <div class="div-bleu" id="service">
         <div class="h-bleu">
           <h1>How to get our service?</h1>
           <h5>just follow these simple steps</h5>
@@ -122,12 +125,9 @@
       </section> 
       <section>
          <div class="FEATUR">
-            <div class="FEATUR-left">
-            <h1>What Makes Us More</h1>
-            <p class="Special"><h1>Special</h1></p>
-            </div>
+            
             <div class="FEATUR-rigth">
-               <h1>Key<span>FEATUR</span></h1>
+               <h1>OUR<span> SERVICES</span></h1>
             </div>
          </div> 
          <div>
@@ -166,24 +166,16 @@
             </div>
       </div>  
       </section> 
-      <div class="div-bleu1">
-         <h5>Let Us Brighten <span> Your Smile!</span></h5>
-         <p>Helping patients achieve good dental health & beautiful smile is a privilege & responsibility.For over 30<br>years,we proudly provided the best dental experience in New York.Our comfort-first approach is<br>designed to meet the needs of you & your entire family.</p>
-         <button>Make An Appinment</button> 
-
-      </div>
-      <div class="History">
+     
+      <div class="History" id="about">
          <div class="History-right">
             <h1>WHO <span>WE ARE</span></h1>
          </div>
-         <div class="History-left">
-            <h2>Our Glorious</h2>
-            <p><h1>History</h1></p>
-         </div>
+         
       </div>
       <div class="our-history">
          <div class="our-history-left">
-            <img src="ressources/images/patient.png" alt="Closeupsmileypatientatappointment">
+            <img src="ressources/images/types-dentistry-specialties-feature.png" alt="Closeupsmileypatientatappointment">
          </div>
          <div class="our-history-right" >
             <h1>Our history</h1>
@@ -195,10 +187,7 @@
       </div>
       <div class="all-meet">
          <div class="meet">
-            <div class="meet-brains"> 
-               <h2>Meet Some of Our</h2>
-               <p><h1>Brains</h1></p>
-            </div>
+           
             <div class="meet-doctors">
                <h1>MEET OUR <span>DOCTORS</span></h1>
             </div>
@@ -251,27 +240,13 @@
          </div>
       </div>
 
-      <div class="client">
-         <div class="samantha-cliente">
-            <img src="ressources/images/customer.png" alt="Samantha Payne">
-            <P>samantha Payne</P>
-         </div>
-         <div class="samantha">
-            <h4>What our client says about us</h4>
-            <p>I've seen a lot of Dentists over my lifetime I've had some serious dental <br>
-               issues.But my highest praise goes to Dr.Jonathon Doe and his staffs. I was always <br>
-               very anxious going to the dentist but this time at Digital Implant,my experience was <br>
-               so painless and relaxed their was no discomfort whatsoever.</p>
-         </div>
+      
       </div>  
-      <div class="History">
+      <div class="History" id="appointment">
       <div class="History-right">
          <h1>MAKE AN <span>APPOINMENT</span></h1>
       </div>
-      <div class="History-left">
-         <h2>Consult with our</h2>
-         <p><h1>Doctor</h1></p>
-      </div>
+      
       </div>
       <div class="Appointment">
          <div  class="contact">
@@ -319,7 +294,7 @@
             <form action="#">
                <input type="text" id="name" name="name" placeholder="First name" required>
                <input type="email" id="email" name="email" placeholder="Email address" required>
-               <button class="-buttom-">Subscrbe Now</button>
+                <button class="-buttom-">Subscrbe Now</button>
             </form>
 
 
@@ -368,5 +343,6 @@
          <div class="copy">
             <p>&copy;2001-2022,All Rights Reserved </p>
          </div> 
+      </div>   
    </body>
 </html>
