@@ -116,7 +116,6 @@ header{
     width: 35px;
     height: 4px;
     background-color: var(--primary);
-    /* cursor: pointer; */
     z-index: 2;
 }
 .toggle{
@@ -142,6 +141,67 @@ header input:checked ~ .menu-bar::before{
 header input:checked ~ .menu-bar::after{
     top: 0;
     transform: rotate(-45deg);
+}
+
+/* sign-up */
+#sign-up{
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px var(--silver) solid;
+    margin: 100px auto;
+    border-top-right-radius: 30px;
+    gap: 20px;
+}
+#sign-up .h1 {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+}
+.sign-input {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.sign-input input{
+    height: 25px;
+    border-radius: 5px;
+    border: 2px var(--silver) solid;
+
+}
+.check {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.remember label{
+    text-decoration: underline;
+}
+.check .login a {
+    color: black;
+}
+#sign-up button {
+    width: 90%;
+    margin: auto;
+    background-color: var(--lightprimary);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+.login{
+    width: 50%;
+}
+.check-log{
+    width: 50%;
+}
+#sign-up .login-btn{
+    width: 50%;
 }
 #home .left {
     display: flex;
@@ -565,10 +625,10 @@ header input:checked ~ .menu-bar::after{
 }
 @media(max-width:843px) {
     /* .menu {
-        display: none;
+        display: block;
        
     } */
-    .menu-bar,
+   .menu-bar,
     .toggle{
         display: block;
     }
@@ -577,18 +637,17 @@ header input:checked ~ .menu-bar::after{
         flex-direction: column;
         align-items: center;
         position: relative;
-        top: 0;
-        /* margin-top: -500px; */
+        top: 75px;
+        margin-top: -500px;
         background-color: #FFD700;
         width: 300px;
         padding-top: 20px;
         z-index: -2;
     }
-    header input:checked ~ .menu{
-       
-        margin-top: -200px;
+    #header input:checked ~ .menu{
+        margin-top: 0px;
         transition: 0.7s;
-    }
+    } 
     /* header input:checked ~ .menu {
         display: none;
        
@@ -751,6 +810,31 @@ header input:checked ~ .menu-bar::after{
     .link-child a{
         color: white;
         text-decoration: none;
+    }
+    
+    #sign-up{
+        height: 600px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        margin-top: 70px;
+    }
+    .sign-input {
+        width: 80%;
+    }
+    .check {
+        width: 80%;
+    }
+    #sign-up button {
+        width: 80%;
+    }
+    section #sign-up{
+        height: 400px;
+        margin-top:120px ;
+    }
+    #sign-up .login-btn{
+        width: 80%;
     }
 }
 
