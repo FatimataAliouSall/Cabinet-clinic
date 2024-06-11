@@ -23,14 +23,13 @@ header{
     left: 0;
     right: 0;
     background-color: var(--white);
-    
+    border-bottom: 2px var(--silver) solid;
     z-index: 10;
 }
 .menu {
     display: flex;
     justify-content: space-between;
 }
-
 .menu li {
     margin: 0 15px;
     list-style: none;
@@ -85,14 +84,14 @@ header{
     border-radius: 5px;
     margin: 15px 20px;
     border: none;
-    
+    cursor: pointer;
  
 }
-.bar{
+/* header.bar{
     display: flex;
     margin-right: -370px;
-}
-.menu-bar::before, 
+} */
+/* .menu-bar::before, 
 .menu-bar::after{
     content: '';
     position: absolute;
@@ -105,8 +104,8 @@ header{
 
     top: -10px;
     width: 35px;
-}
-.menu-bar::after{
+} */ 
+/* .menu-bar::after{
 
     top: 10px;
     width: 35px;
@@ -117,8 +116,39 @@ header{
     height: 4px;
     background-color: var(--primary);
     z-index: 2;
-}
-.toggle{
+} */
+/* .hamburger {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: #ffffff;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+ }
+ .hamburger::before , .hamburger::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background-color: var(--primary);
+    border-radius: 10px;
+    transition: 0.3s;
+
+
+ }
+.hamburger::before {
+    top: -10px;
+    width: 20px;
+
+
+ }
+ .hamburger::after {
+    top: 10px;
+    width: 25px;
+ }
+ 
+.toggle-menu{
     position: absolute;
     width: 35px;
     height:100% ;
@@ -127,24 +157,35 @@ header{
     cursor: pointer;
     opacity: 0;
 }
-.menu-bar,
-.toggle{
+.hamburger,
+.toggle-menu{
     display: none;
 }
-header input:checked ~ .menu-bar{
+header.bar input:checked ~ .hamburger{
     background: transparent;
 }
-header input:checked ~ .menu-bar::before{
+header .bar input:checked ~ .hamburger::before{
     top: 0;
     transform: rotate(45deg);
 }
-header input:checked ~ .menu-bar::after{
+header .bar input:checked ~ .hamburger::after{
     top: 0;
     transform: rotate(-45deg);
-}
+} */
 
 /* sign-up */
 #sign-up{
+    /* width: 40%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px var(--silver) solid;
+    margin: 100px auto;
+    border-top-right-radius: 30px;
+    gap: 20px; */
+   
+}
+.test{
     width: 40%;
     height: 400px;
     display: flex;
@@ -269,15 +310,15 @@ header input:checked ~ .menu-bar::after{
     
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    
 }
-.home1 .right1 {
-    display: flex;
-}
+
+
 .home1 .right1 .partie2 {
     margin-top: 63px;
     
+}
+.right1{
+    display: flex;
 }
 .partie2  div, .partie1 div{
     line-height: 12px;
@@ -326,7 +367,7 @@ header input:checked ~ .menu-bar::after{
 .items {
     text-align: center;
     padding: 20px;
-    background-color: var(--silver);
+    background-color: #F8FAFC;
     justify-content: space-between;
     border-radius: 5px;
     margin: 20px; 
@@ -336,6 +377,7 @@ header input:checked ~ .menu-bar::after{
 
 .History{
    
+
     text-align: center;
     width: 100%;
     border-bottom: 2px var(--silver) solid;
@@ -598,7 +640,7 @@ header input:checked ~ .menu-bar::after{
 .copy{
     height: 50px;
     color: var(--whiteBG);
-    background-color: #6393a8;
+    background-color: #216583;
     margin-bottom: 0;
     
 }
@@ -613,52 +655,94 @@ header input:checked ~ .menu-bar::after{
     }
    .all-meet{
     height: 900px;
-   } 
-    
+   }   
 }
 @media(max-width:735px){
     .all-meet{
         height: 1720px;
     } 
+}    
+    @media (max-width:1289px) {
+    header .menu {
+        display: none;
+
+    }
+    header {
+        padding: 0 20px;
+    }
+     .toggle_menu {
+        display: flex;
+        height: 40px;
+        width: 40px;
+       align-items: center;
+       justify-content: center;
+       position: relative;
+       cursor: pointer;
+
+    }
+    .toggle_menu::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: var(--lightprimary);
+        border-radius: 6px;
+        box-shadow: 0 10px 0 var(--lightprimary);
+        transform: translateY(-10px);
+        transition: 0.5s;
+
+    }
+    .toggle_menu.active::before{
+        transform: translateY(0) rotate(135deg);
+        box-shadow: 0 0 0 var(--lightprimary);
+    }
+      .toggle_menu::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color:var(--lightprimary);
+        border-radius: 6px;
+        transform: translateY(10px);
+        transition: 0.5s;
+
+    }
+    .toggle_menu.active::after {
+        transform: translateY(0) rotate(-135deg);
+
+    }
+    header .menu.responsive {
+        display: flex;
+        position: absolute;
+        top: 69px;
+        right: 0;
+        width: 200px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        flex-direction: column;
+    }
+    header .menu.responsive li {
+        margin: 15px 0;
+        margin-right: 50px;
+    }
+    .button button{
+        margin-right: 60px;
+    }
    
   
 }
 @media(max-width:843px) {
-    /* .menu {
-        display: block;
-       
-    } */
-   .menu-bar,
-    .toggle{
-        display: block;
-    }
-    .menu{
-        justify-content: start;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        top: 75px;
-        margin-top: -500px;
-        background-color: #FFD700;
-        width: 300px;
-        padding-top: 20px;
-        z-index: -2;
-    }
-    #header input:checked ~ .menu{
-        margin-top: 0px;
-        transition: 0.7s;
-    } 
-    /* header input:checked ~ .menu {
-        display: none;
-       
-    }  */
-    .button button{
-        display: none;
-    }
+
     .left .Get {
         /* padding: 5px 20px; */
+        padding: 0;
         width: 160px;
-        font-size: 8px;
+        height: 35px;
+        font-size: 12px;
     }
     .right img {
         width: 100%;
@@ -696,6 +780,7 @@ header input:checked ~ .menu-bar::after{
     
 }
 @media(max-width:500px) {
+      
     #home .left{
         display: flex;
         flex-direction: column;
@@ -724,7 +809,23 @@ header input:checked ~ .menu-bar::after{
         width: 56%;
         
      }
-     .gride{
+    .home1 .right1 {
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .right1 .partie1  {
+        width: 60%;
+    }    
+    .right1 .partie2  {
+        width: 60%;
+    }    
+    .right1 .partie1 h1 {
+        margin: auto;
+        margin-bottom: 20px;
+    }    
+    
+    .gride{
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(6,1fr);
     }
@@ -775,6 +876,8 @@ header input:checked ~ .menu-bar::after{
         width: 100%;
         display: flex;
         flex-direction: column;
+        
+        
     }
     .Dentics{
         width: 250px;
@@ -782,6 +885,8 @@ header input:checked ~ .menu-bar::after{
         padding-right: 0;
         border-right: none;
         text-align: center;
+        border-bottom: 1px solid white;
+        text-align: left;
     }
     .visit{
         width: 250px;
@@ -789,13 +894,27 @@ header input:checked ~ .menu-bar::after{
         padding-right: 0;
         border-right: none;
         text-align: center;
+        border-bottom: 1px solid white;
+        text-align: left;
     }
     .link{
+        flex-direction: column;
         width: 250px;
         margin: 10px auto;
         padding-right: 0;
         border-right: none;
         text-align: center;
+        border-bottom: 1px solid white;
+        text-align: left;
+        /* background-color: #FFD700; */
+        
+    }
+    
+    .link .child-left {
+        text-align: left;
+    }
+    .link .child-right {
+        text-align: left;
     }
     .Adress{
         width: 250px;
@@ -803,9 +922,12 @@ header input:checked ~ .menu-bar::after{
         padding-right: 0;
         border-right: none;
         text-align: center;
+        border-bottom: 1px solid white;
+        text-align: left;
     }
     .link-child{
         margin: auto;
+        flex-direction: column;
     }
     .link-child a{
         color: white;
@@ -815,10 +937,12 @@ header input:checked ~ .menu-bar::after{
     #sign-up{
         height: 600px;
         width: 60%;
-        display: flex;
+        border: none;
+        /* display: flex;
         flex-direction: column;
         border: none;
         margin-top: 70px;
+        margin:30px auto; */
     }
     .sign-input {
         width: 80%;
@@ -836,6 +960,67 @@ header input:checked ~ .menu-bar::after{
     #sign-up .login-btn{
         width: 80%;
     }
+
+    
+     /* .toggle_menu {
+        display: flex;
+        height: 40px;
+        width: 40px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: relative;
+         cursor: pointer;
+    } 
+    .toggle_menu::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: #27ae60;
+        border-radius: 6px;
+        box-shadow: 0 10px 0 #27ae60;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    .toggle_menu.active::before {
+        transform: translateY(0) rotate(135deg);
+        box-shadow: 0 0 0 #27ae60
+    }
+    .toggle_menu::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: #27ae60;
+        border-radius: 6px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .toggle_menu.active::after {
+        transform: translateY(0) rotate(-135deg);
+      
+    }  */
+
+    /* header .menu. {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        flex-direction: column;
+    }
+    header .menu {
+        margin: 15px 0;
+    } */ 
+
+        
+    
 }
 
 

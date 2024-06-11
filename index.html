@@ -12,20 +12,21 @@
           <div class="logo">
              <img src="ressources/images/logo.png" alt="logo">
           </div>
-          <div class="bar">
-            <input type="checkbox" class="toggle">
-            <div class="menu-bar"></div>
-          </div>
+          <!-- <div class="toggle_menu"></div> -->
           <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#service">Services</a></li>
             <li><a href="#about">About us</a></li>
             <li><a href="#appointment">Appointment</a></li>
             <li><a href="sign-up.html">Sign Up</a></li>
+            <div class="button">
+               <a href="login.html"><button>Login</button></a>
+            </div>
          </ul>
-         <div class="button">
-            <button>Login</button>
-         </div>
+         
+
+         
+        <div class="toggle_menu"></div>
        </header>
    </section>       
    <section id="home">
@@ -250,7 +251,7 @@
       </div>
       <div class="Appointment">
          <div  class="contact">
-            <img src="ressources/images/contact.png" alt="images contact">
+            <img src="ressources/images/doctor-with-tablet-computer.jpg" alt="images contact">
          </div>
          <form class="form">
             <div class="form-label">
@@ -343,6 +344,21 @@
          <div class="copy">
             <p>&copy;2001-2022,All Rights Reserved </p>
          </div> 
-      </div>   
+      </div> 
+      
+      
+      
    </body>
+
+</section>
+<script> 
+      var small_menu = document.querySelector('.toggle_menu')
+      var menu = document.querySelector('.menu')
+      small_menu.onclick = function(){
+          small_menu.classList.toggle('active');
+          menu.classList.toggle('responsive');
+      }
+
+
+  </script>
 </html>
