@@ -920,6 +920,9 @@ header{
     .sign-input {
         width: 80%;
     }
+    .password a {
+        font-size: 14px;
+    }
     .check {
         width: 80%;
     }
