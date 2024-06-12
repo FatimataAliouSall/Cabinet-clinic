@@ -700,6 +700,9 @@ header{
         display: none;
 
     } 
+    header {
+        justify-content: space-between;
+    }
     body {
         overflow-x: hidden;
     }
@@ -719,7 +722,8 @@ header{
        justify-content: center;
        position: relative;
        cursor: pointer;
-        left: 200px;
+       
+        
     }
     .toggle_menu::before {
         position: absolute;
