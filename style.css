@@ -304,7 +304,7 @@ header{
 .our-history{
     display: flex;
     
-    margin: auto;
+    /* margin: auto; */
     margin-bottom: 20px;
     width: 90%;
     
@@ -318,7 +318,9 @@ header{
     width: 400px;
     height: 300px;
     margin-top: 10px;
-    border-radius: 35px;
+    border-radius: 35px; 
+    margin-left: 100px;
+    
 }
 .our-history-right{
     margin-left: 10%;
@@ -353,12 +355,16 @@ header{
     transform: translateY(-20px);
 } 
 .all-doctors{
+    
     height: 360px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 80px; 
+    margin-right: 80px; 
     display: flex;
     padding: 40px;
     gap: 20px;
+    
+    
+    
 } 
 .doctors{
     width: 250px;
@@ -401,15 +407,16 @@ header{
     width: 80%;
 }
 .contact img{
-    height: 350px;
+    height: 450px;
     margin-left: 35px;
     border-radius: 20px;
 }
 .form{
     width: 650px;
-    height:350px ;
+    height:450px ;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 .form-label{
     display: flex;
@@ -448,7 +455,7 @@ header{
 .checkbox{
     margin-left: 30px;
 }.newsletter{
-    background-color: var(--silver);
+    background-color: #F8FAFC;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -465,10 +472,15 @@ header{
     margin: auto;
     margin-bottom: 100px;
     margin-top: 50px;
-    width: 900px;
+    width: 900px; 
     color: var(--white);
     
+    
 }
+/* .Subscribe form {
+    gap: 30px;
+    width: 100%;
+} */
 .Subscribe input {
     margin-top: 10px;
     padding: 10px;
@@ -478,7 +490,12 @@ header{
     border: none;
     background-color: #6393a8;
     
+    
 
+}
+
+.new input {
+    margin-right: 30px;
 }
 .Subscribe input::placeholder{
     color: var(--white);
@@ -804,6 +821,10 @@ header{
         width: 300px;
         font-size: 14px;
     }
+    .our-history-left img {
+        margin: auto;
+        
+    }
     .Appointment{
         display: flex;
         flex-direction: column;
@@ -831,6 +852,7 @@ header{
         height: 250px;
         width: 100%;
         margin-top: 80px;
+    
     }
     .Subscribe form{
        display: flex;
