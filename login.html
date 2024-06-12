@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabinet-clinic</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <section id="header">
         <header>
            <div class="logo">
-            <a href="index.html"><img src="ressources/images/logo.png" alt="logo">
-            </a>
+              <img src="ressources/images/logo.png" alt="logo">
            </div>
+           <!-- <div class="toggle_menu"></div> -->
            <ul class="menu">
-             <li><a href="#home">Home</a></li>
-             <li><a href="#service">Services</a></li>
-             <li><a href="#about">About us</a></li>
-             <li><a href="#appointment">Appointment</a></li>
-             <li><a href="#">Sign Up</a></li>
+             <li><a href="index.html#home">Home</a></li>
+             <li><a href="index.html#service">Services</a></li>
+             <li><a href="index.html#about">About us</a></li>
+             <li><a href="#index.html#appointment">Appointment</a></li>
+             <li><a href="sign-up.html">Sign Up</a></li>
+             <div class="button">
+                <a href="login.html"><button>Login</button></a>
+             </div>
           </ul>
-          <div class="button">
-             <button>Login</button>
-          </div>
+          
+ 
+          
+         <div class="toggle_menu"></div>
         </header>
     </section>
     <section>
@@ -49,6 +54,16 @@
             <button class="login-btn">Login</button>
         </form>
     </section>
+    <script> 
+        var small_menu = document.querySelector('.toggle_menu')
+        var menu = document.querySelector('.menu')
+        small_menu.onclick = function(){
+            small_menu.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }
+  
+  
+    </script>
     
 </body>
 </html>

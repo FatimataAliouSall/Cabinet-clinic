@@ -700,6 +700,9 @@ header{
         display: none;
 
     } 
+    body {
+        overflow-x: hidden;
+    }
     #home .left{
         display: flex;
         flex-direction: column;
@@ -716,7 +719,7 @@ header{
        justify-content: center;
        position: relative;
        cursor: pointer;
-
+        left: 200px;
     }
     .toggle_menu::before {
         position: absolute;
